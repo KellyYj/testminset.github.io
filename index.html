@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+		<title>百度新闻</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/news.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="cf">
+				<a href="#" class="logo">
+					<span class="iconfont">&#xf0210;</span>
+				</a>
+				<a href="#" class="user">
+					<span class="iconfont">&#xf01a1;</span>
+				</a>
+				<a href="#" class="logo">
+					<span class="iconfont">&#xf0175;</span>
+				</a>
+				<a href="#" class="search">
+					<span class="iconfont">&#xf012c;</span>
+				</a>
+			</header>
+			<nav>
+				<ul>
+					<li>
+						<a href="#">精选</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">百家</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">本地</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">图片</a>
+						<i></i>
+					</li>
+				
+					<li>
+						<a href="#">互联网</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">百家</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">本地</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">图片</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">娱乐</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">互联网</a>
+						<i></i>
+					</li>
+					<li>
+						<a href="#">互联网</a>
+						<i></i>
+					</li>
+				<li>
+						<a href="#">娱乐</a>
+						<i></i>
+					</li>
+				</ul>
+			</nav>
+			<article class="news-main">
+				<ul class="news-lists">
+					<li class="news-list">
+						<div class="nesimg">
+							<img src="img/1n.jpg"  width="100%"/>
+						</div>
+						<div class="newscontent">
+							<h1>是件幸福的是件幸福的是件幸福的</h1>
+							<p><span class="newstime">2017年7月18日</span>
+								<span class="newssrc">财经</span>
+								
+							</p>
+						</div>
+					</li>
+					
+
+				</ul>
+				
+			</article>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				var deviceWidth = $('body').width();
+				$('nav li').each(function(index,item){
+					if($(this).find('a').html().split('').length>2){
+						$(this).width(deviceWidth/3);
+					}else{
+						$(this).width(deviceWidth/6);
+					}
+				});
+			});
+			
+			
+		</script>
+		
+		<script type="text/javascript" src="js/news.js"></script>
+	</body>
+</html>
